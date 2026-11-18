@@ -15,6 +15,6 @@ Then open `http://localhost:8080`.
 - The public Facebook link is kept in the contact/footer only, not the utility bar.
 - Development-sector imagery is loaded from reputable public web sources and listed in `CREDITS.md`.
 
-- Contact/WhatsApp number used across the site: +228 79 71 11 88.
+- Contact/WhatsApp number used across the site: +228 70 45 09 90.
 - Floating WhatsApp control uses the bundled Font Awesome WhatsApp brand SVG.
 - Homepage hero is a full-bleed landscape image with direct text overlay (no card/box).
