@@ -18,3 +18,5 @@ These are illustrative development-sector images used for the website demo. They
   https://www.fao.org/media/images/newsroomlibraries/default-album/amr-photo.jpg
 - Aerial farmland: Zuri Springs
   https://zurisprings.com/assets/zuri-aerial-coffee-C9CqLUkc.webp
+
+- WhatsApp brand icon: Font Awesome Free 6.7.2 (Brands), CC BY 4.0.

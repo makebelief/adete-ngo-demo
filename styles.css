@@ -23,7 +23,7 @@ button,input,textarea{font:inherit}
 .shell{width:var(--shell);margin-inline:auto}
 
 .utility-bar{background:var(--navy-deep);color:#fff;font-size:.76rem;letter-spacing:.015em}
-.utility-inner{height:38px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.utility-inner{height:40px;display:flex;align-items:center;justify-content:space-between;gap:24px;padding-inline:4px}
 .utility-left{display:flex;align-items:center;gap:14px;min-width:0}
 .utility-phone{display:inline-flex;align-items:center;gap:8px;white-space:nowrap}
 .utility-phone svg{width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
@@ -47,26 +47,26 @@ button,input,textarea{font:inherit}
 .menu-toggle{display:none;border:0;background:transparent;padding:8px;cursor:pointer}
 .menu-toggle span{display:block;width:25px;height:2px;background:var(--navy-deep);margin:5px 0}
 
-.hero{padding:72px 0 0;background:var(--paper)}
-.hero-grid{display:grid;grid-template-columns:.88fr 1.12fr;gap:72px;align-items:center}
-.hero-copy{padding:18px 0 28px}
+.hero{background:var(--paper)}
+.hero-visual{position:relative;min-height:clamp(650px,78vh,820px);overflow:hidden;background:#183b5c}
+.hero-visual>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 42%}
+.hero-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,28,50,.78) 0%,rgba(5,28,50,.58) 38%,rgba(5,28,50,.20) 68%,rgba(5,28,50,.06) 100%)}
+.hero-content{position:relative;z-index:2;min-height:inherit;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding-block:76px;max-width:1220px}
+.hero-content .kicker{color:#9be0b5;text-shadow:0 1px 14px rgba(0,0,0,.2)}
 .kicker{margin:0 0 18px;font:700 .76rem "Manrope",sans-serif;text-transform:uppercase;letter-spacing:.16em;color:var(--green)}
 .hero h1,.statement h2,.section-intro h2,.terrain-heading h2,.values-copy h2,.join-copy h2,.contact-copy h2{margin:0;font:700 clamp(3.25rem,5.3vw,5.7rem)/.99 "Manrope",sans-serif;letter-spacing:-.055em;color:var(--navy-deep)}
-.hero h1 em{font-style:normal;color:var(--green)}
-.hero-lead{max-width:660px;margin:26px 0 0;font-size:1.06rem;line-height:1.72;color:var(--muted)}
+.hero h1{max-width:890px;color:#fff;text-shadow:0 2px 24px rgba(0,0,0,.18)}
+.hero h1 em{font-style:normal;color:#a8e7bd}
+.hero-lead{max-width:710px;margin:26px 0 0;font-size:1.06rem;line-height:1.72;color:rgba(255,255,255,.9);text-shadow:0 1px 16px rgba(0,0,0,.18)}
 .hero-actions{display:flex;align-items:center;gap:22px;margin-top:34px}
 .button{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 21px;font:700 .8rem "Manrope",sans-serif;transition:.2s ease}
 .button-primary{background:var(--green);color:#fff}
 .button-primary:hover{background:var(--green-deep);transform:translateY(-1px)}
 .button-link{padding-inline:0;border-bottom:1px solid #aab3ab;color:var(--navy-deep);min-height:42px}
 .button-link:hover{border-color:var(--navy-deep)}
-.hero-media{position:relative}
-.hero-photo{margin:0;background:#e9eee7;min-height:610px;display:grid;place-items:center;overflow:hidden}
-.hero-photo img{width:100%;height:100%;max-height:680px;object-fit:contain;object-position:center}
-.hero-photo-note{display:grid;grid-template-columns:145px 1fr;gap:18px;align-items:center;border-top:4px solid var(--green);padding:18px 0 0;margin-top:14px}
-.hero-photo-note span{font:700 .68rem "Manrope",sans-serif;text-transform:uppercase;letter-spacing:.13em;color:var(--green)}
-.hero-photo-note strong{font:700 1rem "Manrope",sans-serif;color:var(--navy-deep)}
-.hero-index{margin-top:62px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:grid;grid-template-columns:repeat(4,1fr)}
+.button-hero-link{padding-inline:0;color:#fff;border-bottom:1px solid rgba(255,255,255,.55);min-height:42px}
+.button-hero-link:hover{border-color:#fff}
+.hero-index{border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:grid;grid-template-columns:repeat(4,1fr)}
 .hero-index>div{padding:24px 26px;border-right:1px solid var(--line)}
 .hero-index>div:first-child{padding-left:0}
 .hero-index>div:last-child{border-right:0}
@@ -163,10 +163,10 @@ button,input,textarea{font:inherit}
 .togo-line span:nth-child(2){background:var(--gold)}
 .togo-line span:nth-child(3){background:var(--red)}
 
-.whatsapp-float{position:fixed;right:24px;bottom:24px;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:#25d366;color:#fff;z-index:60;box-shadow:0 10px 28px rgba(0,0,0,.18);transition:transform .2s ease,box-shadow .2s ease}
+.whatsapp-float{position:fixed;right:28px;bottom:28px;width:60px;height:60px;border-radius:50%;display:grid;place-items:center;background:#25d366;z-index:60;box-shadow:0 10px 28px rgba(0,0,0,.18);transition:transform .2s ease,box-shadow .2s ease}
 .whatsapp-float:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(0,0,0,.22)}
-.whatsapp-float svg{width:31px;height:31px;fill:currentColor}
-.back-top{position:fixed;right:31px;bottom:94px;width:44px;height:44px;border:1px solid rgba(9,36,72,.18);background:#fff;color:var(--navy-deep);border-radius:50%;z-index:55;opacity:0;pointer-events:none;transition:.2s;box-shadow:0 6px 18px rgba(0,0,0,.08)}
+.whatsapp-float img{width:31px;height:35px;display:block}
+.back-top{position:fixed;right:36px;bottom:102px;width:44px;height:44px;border:1px solid rgba(9,36,72,.18);background:#fff;color:var(--navy-deep);border-radius:50%;z-index:55;opacity:0;pointer-events:none;transition:.2s;box-shadow:0 6px 18px rgba(0,0,0,.08)}
 .back-top.show{opacity:1;pointer-events:auto}
 
 .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
@@ -177,10 +177,8 @@ button,input,textarea{font:inherit}
   :root{--shell:min(100% - 40px,1220px)}
   .brand-text{display:none}
   .primary-nav{gap:18px}
-  .hero-grid{grid-template-columns:1fr;gap:44px}
-  .hero-copy{max-width:900px}
-  .hero-photo{min-height:0}
-  .hero-photo img{max-height:none;aspect-ratio:3/2}
+  .hero-visual{min-height:700px}
+  .hero-content{padding-block:64px}
   .statement-grid{grid-template-columns:190px 1fr;gap:50px}
   .story-image-grid{grid-template-columns:1.25fr .75fr}
   .focus-item{grid-template-columns:70px 1fr 260px}
@@ -199,7 +197,8 @@ button,input,textarea{font:inherit}
   .primary-nav.open{display:flex}
   .primary-nav a{padding:14px 0!important;border-bottom:1px solid var(--line)}
   .nav-action{margin-top:12px;text-align:center;border:0!important;padding:14px!important}
-  .hero{padding-top:48px}
+  .hero-visual{min-height:670px}
+  .hero-shade{background:linear-gradient(90deg,rgba(5,28,50,.78),rgba(5,28,50,.48) 70%,rgba(5,28,50,.22))}
   .hero h1{font-size:clamp(3rem,10vw,4.5rem)}
   .hero-index{grid-template-columns:1fr 1fr}
   .hero-index>div{border-bottom:1px solid var(--line)}
@@ -225,15 +224,16 @@ button,input,textarea{font:inherit}
 
 @media (max-width:560px){
   :root{--shell:min(100% - 28px,1220px)}
-  .utility-inner{height:34px}
+  .utility-inner{height:38px}
   .utility-phone span{font-size:.68rem}
-  .hero{padding-top:36px}
-  .hero-copy{padding-top:0}
+  .utility-inner{padding-inline:6px}
+  .hero-visual{min-height:650px}
+  .hero-visual>img{object-position:58% 42%}
+  .hero-shade{background:linear-gradient(180deg,rgba(5,28,50,.28) 0%,rgba(5,28,50,.52) 45%,rgba(5,28,50,.82) 100%)}
+  .hero-content{justify-content:flex-end;padding-block:54px}
   .hero h1{font-size:clamp(2.7rem,13vw,3.7rem)}
   .hero-lead{font-size:.96rem}
   .hero-actions{flex-direction:column;align-items:flex-start;gap:12px}
-  .hero-photo-note{grid-template-columns:1fr;gap:6px}
-  .hero-index{margin-top:44px}
   .hero-index>div{padding:18px 14px}
   .hero-index>div:first-child,.hero-index>div:nth-child(3){padding-left:0}
   .statement{padding:78px 0 72px}
@@ -250,8 +250,8 @@ button,input,textarea{font:inherit}
   .footer-grid{grid-template-columns:1fr;gap:34px}
   .footer-brand img{width:190px}
   .footer-bottom{flex-direction:column;gap:8px}
-  .whatsapp-float{right:18px;bottom:18px;width:54px;height:54px}
-  .back-top{right:23px;bottom:83px}
+  .whatsapp-float{right:20px;bottom:20px;width:56px;height:56px}
+  .back-top{right:26px;bottom:88px}
 }
 
 @media (prefers-reduced-motion:reduce){
