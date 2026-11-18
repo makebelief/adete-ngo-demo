@@ -259,3 +259,86 @@ button,input,textarea{font:inherit}
   *,*:before,*:after{transition:none!important;animation:none!important}
   .reveal{opacity:1;transform:none}
 }
+
+/* Final QA hardening */
+body{overflow-x:hidden}
+section[id]{scroll-margin-top:110px}
+.hero-visual>img,.focus-media img,.story-image img,.terrain-image img{background:#e7ece7}
+
+@media (max-width:820px){
+  .primary-nav{max-height:calc(100vh - 78px);overflow-y:auto}
+  .hero-content{width:var(--shell);padding-block:58px}
+  .hero h1{max-width:720px;line-height:1.02}
+  .hero-lead{max-width:620px}
+  .focus-item{grid-template-columns:46px minmax(0,1fr);gap:18px}
+  .focus-media{grid-column:2;width:100%;aspect-ratio:16/9}
+  .terrain-image{aspect-ratio:16/10}
+  .contact-copy,.map-wrap{min-width:0}
+  .footer-grid{align-items:start}
+}
+
+@media (max-width:560px){
+  .utility-inner{justify-content:center;padding-inline:12px}
+  .utility-left{width:100%;justify-content:center}
+  .utility-phone{max-width:100%;gap:7px}
+  .utility-phone span{font-size:.66rem;letter-spacing:0}
+  .site-header{backdrop-filter:blur(10px)}
+  .nav-inner{gap:14px}
+  .brand{flex:1;min-width:0}
+  .brand img{width:78px;height:54px}
+  .menu-toggle{flex:0 0 auto;margin-right:-5px}
+  .hero-visual{min-height:620px}
+  .hero-visual>img{object-position:54% center}
+  .hero-content{padding-block:44px 46px}
+  .hero-content .kicker{font-size:.66rem;letter-spacing:.12em;margin-bottom:12px}
+  .hero h1{font-size:clamp(2.45rem,12.2vw,3.35rem);letter-spacing:-.045em}
+  .hero-lead{font-size:.9rem;line-height:1.58;margin-top:18px}
+  .hero-actions{margin-top:24px;width:100%}
+  .hero-actions .button-primary{width:100%;max-width:290px}
+  .hero-index{grid-template-columns:1fr 1fr}
+  .hero-index strong{font-size:1.35rem}
+  .hero-index span{font-size:.69rem;line-height:1.35}
+  .story-image{aspect-ratio:16/10}
+  .story-caption{padding-top:2px}
+  .focus-item{grid-template-columns:1fr;gap:10px;padding:28px 0}
+  .focus-number,.focus-copy,.focus-media{grid-column:1}
+  .focus-number{margin-bottom:2px}
+  .focus-copy p{font-size:.86rem}
+  .focus-media{margin-top:10px;width:100%;aspect-ratio:16/9}
+  .terrain-feature{gap:20px}
+  .terrain-image{aspect-ratio:16/10}
+  .values-list>div{grid-template-columns:48px 1fr}
+  .join-mark{min-height:240px}
+  .contact-details{margin-top:32px}
+  .map-wrap,.map-wrap iframe{min-height:360px}
+  .site-footer{padding-top:60px}
+  .footer-brand img{width:180px}
+  .whatsapp-float{right:16px;bottom:max(16px,env(safe-area-inset-bottom));width:54px;height:54px}
+  .whatsapp-float img{width:29px;height:33px}
+  .back-top{right:21px;bottom:82px;width:40px;height:40px}
+}
+
+@media (max-width:380px){
+  :root{--shell:min(100% - 24px,1220px)}
+  .utility-phone span{font-size:.62rem}
+  .brand img{width:72px;height:50px}
+  .hero-visual{min-height:600px}
+  .hero h1{font-size:2.35rem}
+  .hero-lead{font-size:.86rem}
+  .statement h2,.section-intro h2,.terrain-heading h2,.values-copy h2,.join-copy h2,.contact-copy h2{font-size:2.35rem}
+  .focus-copy h3{font-size:1.55rem}
+  .terrain-copy h3{font-size:1.9rem}
+}
+
+/* Client-ready mobile hardening */
+.focus-copy,.focus-media,.story-caption,.terrain-copy,.footer-col,.contact-copy{min-width:0}
+.contact-details a,.footer-col a{overflow-wrap:anywhere}
+.menu-toggle,.primary-nav a,.button,.whatsapp-float,.back-top{touch-action:manipulation}
+@media (max-width:560px){
+  .focus-media img{object-position:center center}
+  .primary-nav{padding-inline:20px}
+  .primary-nav a{min-height:46px;display:flex;align-items:center}
+  .nav-action{justify-content:center}
+  .utility-phone{overflow:hidden;text-overflow:ellipsis}
+  .story-image img,.terrain-image img{object-position:center center}
+}

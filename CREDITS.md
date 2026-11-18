@@ -20,3 +20,18 @@ These are illustrative development-sector images used for the website demo. They
   https://zurisprings.com/assets/zuri-aerial-coffee-C9CqLUkc.webp
 
 - WhatsApp brand icon: Font Awesome Free 6.7.2 (Brands), CC BY 4.0.
+
+## Final QA image reliability update
+- Hero / NGO education imagery: Emmanuel Ikwuegbu, Unsplash — photo ID `1632215861513-130b66fe97f4`.
+- Solidarity imagery: Oswald Elsaboath, Unsplash — photo ID `1772562179599-f4137b8f18ac`.
+- Environment imagery: Annie Spratt, Unsplash — photo ID `1473605768212-7e1f2c756179`.
+- Local fallback images are bundled in `/assets` so externally hosted images never leave empty placeholders if a CDN blocks a request.
+
+
+## Final local image fixes
+- `solidarity-community.webp`: supplied by the user for this A.D.E.T.E. demo.
+- `environment-land.webp`: cropped and optimized from the A.D.E.T.E. Facebook material supplied in the project brief.
+
+These two images are bundled locally to avoid third-party hotlink failures.
+
+- Environment card primary image: “2025 Chad Women working on agricultural land”, MilanGIZ, Wikimedia Commons, CC BY-SA 4.0. A local fallback is bundled in `assets/environment-land.webp`.

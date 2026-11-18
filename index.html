@@ -1,19 +1,33 @@
 <!doctype html>
 <html lang="fr">
+<!-- build: client-v3-local-images-2026-11-18 -->
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="theme-color" content="#0b6a3a" />
   <meta name="description" content="Association A.D.E.T.E. — Actions du Développement et d'Épanouissement pour un Togo Émergent. Éducation, solidarité, santé et environnement à Légbassito, Lomé." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Association A.D.E.T.E." />
   <meta property="og:title" content="Association A.D.E.T.E. | Ensemble, bâtissons un avenir meilleur" />
   <meta property="og:description" content="Depuis 2008 à Légbassito, Lomé — Éducation · Solidarité · Santé · Environnement." />
-  <meta property="og:image" content="assets/adete-logo-transparent.png" />
+  <meta property="og:url" content="https://adete-ngo-demo.vercel.app/" />
+  <meta property="og:image" content="https://adete-ngo-demo.vercel.app/assets/og-adete.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="Logo de l'Association A.D.E.T.E. et devise Ensemble, bâtissons un avenir meilleur" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Association A.D.E.T.E. | Togo" />
+  <meta name="twitter:description" content="Éducation · Solidarité · Santé · Environnement à Légbassito, Lomé." />
+  <meta name="twitter:image" content="https://adete-ngo-demo.vercel.app/assets/og-adete.png" />
   <title>Association A.D.E.T.E. | Togo</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="icon" href="assets/favicon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/adete-icon-512.png" />
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1632215861513-130b66fe97f4?auto=format&fit=crop&w=2200&q=86" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -60,9 +74,11 @@
     <section class="hero" id="accueil">
       <div class="hero-visual">
         <img
-          src="https://res.cloudinary.com/compcan/images/w_1600%2Ch_1066%2Cc_scale/f_auto%2Cq_auto/v1706926403/compassion.ca-wp/Web_Version-CC-TG072000052-Education-07-2204_36622a1aec/Web_Version-CC-TG072000052-Education-07-2204_36622a1aec.jpg?_i=AA"
-          alt="Élèves dans une salle de classe au Togo"
+          src="https://images.unsplash.com/photo-1632215861513-130b66fe97f4?auto=format&fit=crop&w=2200&q=86"
+          alt="Action éducative auprès d'élèves en Afrique de l'Ouest"
           fetchpriority="high"
+          decoding="async"
+          onerror="this.onerror=null;this.src='assets/community-fallback.jpg'"
         />
         <div class="hero-shade" aria-hidden="true"></div>
         <div class="shell hero-content reveal">
@@ -98,7 +114,7 @@
     <section class="story-image-section" aria-label="Engagement communautaire">
       <div class="shell story-image-grid">
         <div class="story-image reveal">
-          <img src="https://static.the.akdn/53832/1763385668-54729319860_ac73d8440e_k.jpg" alt="Réunion communautaire de femmes et d'enfants en Afrique" loading="lazy" />
+          <img src="https://static.the.akdn/53832/1763385668-54729319860_ac73d8440e_k.jpg" alt="Réunion communautaire de femmes et d'enfants en Afrique" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/community-fallback.jpg'" />
         </div>
         <div class="story-caption reveal reveal-delay">
           <span>Proximité</span>
@@ -126,7 +142,7 @@
               <p>Créer de meilleures conditions d'apprentissage et soutenir le potentiel des enfants et des jeunes.</p>
             </div>
             <div class="focus-media">
-              <img src="https://images.ctfassets.net/8wq43ps0qs3y/3hYV9JqmwPjTWvZG5g1RXI/c4dbe124a991091e5335ca6b792e8e72/togo-bernadette-puo-continuare-scuola-02.jpg" alt="Écolière au Togo" loading="lazy" />
+              <img src="https://images.ctfassets.net/8wq43ps0qs3y/3hYV9JqmwPjTWvZG5g1RXI/c4dbe124a991091e5335ca6b792e8e72/togo-bernadette-puo-continuare-scuola-02.jpg" alt="Écolière au Togo" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/community-fallback.jpg'" />
             </div>
           </article>
 
@@ -137,7 +153,7 @@
               <p>Accompagner les personnes et familles en situation de vulnérabilité par des actions concrètes de proximité.</p>
             </div>
             <div class="focus-media">
-              <img src="https://graciousgifters.org/wp-content/uploads/2023/04/Rhema_Grace-Orphanage-12_Gracious-Gifters-Foundation-scaled.jpg" alt="Action de solidarité auprès d'enfants en Afrique" loading="lazy" />
+              <img src="assets/solidarity-local-v3.webp" alt="Solidarité A.D.E.T.E. – action communautaire auprès des enfants et des familles" loading="lazy" decoding="async" />
             </div>
           </article>
 
@@ -148,7 +164,7 @@
               <p>Favoriser la prévention, l'information et l'accès à des actions de santé communautaire utiles et accessibles.</p>
             </div>
             <div class="focus-media">
-              <img src="https://extranet.who.int/uhcpartnership/sites/default/files/media-library/nyirahagenimana_dative_hashakimana_maurice_habinshuti_m.gorette_13.jpg" alt="Action de santé communautaire en Afrique" loading="lazy" />
+              <img src="https://extranet.who.int/uhcpartnership/sites/default/files/media-library/nyirahagenimana_dative_hashakimana_maurice_habinshuti_m.gorette_13.jpg" alt="Action de santé communautaire en Afrique" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/health-fallback.jpg'" />
             </div>
           </article>
 
@@ -159,7 +175,7 @@
               <p>Encourager des pratiques responsables qui protègent les ressources locales et renforcent la résilience.</p>
             </div>
             <div class="focus-media">
-              <img src="https://engineeringreview.com.pk/wp-content/uploads/2025/02/ER-Feb-9.jpeg" alt="Agriculture communautaire en Afrique" loading="lazy" />
+              <img src="assets/environment-local-v3.webp" alt="Environnement A.D.E.T.E. – agriculture, territoire et résilience" loading="lazy" decoding="async" />
             </div>
           </article>
         </div>
@@ -176,10 +192,7 @@
         <div class="terrain-grid">
           <article class="terrain-feature reveal">
             <div class="terrain-image">
-              <picture>
-                <source srcset="https://www.fao.org/media/images/newsroomlibraries/default-album/amr-photo.jpg" />
-                <img src="assets/livestock-fallback.jpg" alt="Élevage communautaire en Afrique" loading="lazy" />
-              </picture>
+              <img src="https://www.fao.org/media/images/newsroomlibraries/default-album/amr-photo.jpg" alt="Élevage communautaire en Afrique" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/livestock-fallback.jpg'" />
             </div>
             <div class="terrain-copy">
               <span>Développement local</span>
@@ -190,10 +203,7 @@
 
           <article class="terrain-feature terrain-feature-reverse reveal">
             <div class="terrain-image">
-              <picture>
-                <source srcset="https://zurisprings.com/assets/zuri-aerial-coffee-C9CqLUkc.webp" type="image/webp" />
-                <img src="assets/field-fallback.jpg" alt="Parcelles agricoles et territoire" loading="lazy" />
-              </picture>
+              <img src="https://zurisprings.com/assets/zuri-aerial-coffee-C9CqLUkc.webp" alt="Parcelles agricoles et territoire" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/environment-fallback.jpg'" />
             </div>
             <div class="terrain-copy">
               <span>Environnement & territoire</span>
